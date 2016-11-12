@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Family</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+       </head>
+     
+<script>
+var image=document.getElementById("ima");
+var img_array=["jesus.jpg","jesus1.jpg"];
+var index=0;
+function slide()
+{
+document["ima"].src=img_array[index];
+index++;
+if (index>=img_array.length)
+{
+index=0;
+}
+}
+setInterval("slide()",500);
+</script>
+</head>
+<body>
+<img id="ima" src="heart.jpg" width="200" height="200" name="image"/>
+       <section id="container1">
+       <h1>Profile</h1>
+       <h2>Family</h2>
+       <p>
+  I live with my family </p>
+       </section>
+       </body>
+       </html>
