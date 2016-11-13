@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Page</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="html, javascript" />
+    <meta name="description" content="Test Web app" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="Content/Styles/site.css" />
+    
+</head>
+<body>
+    <div id="container">
+   <section id="pageHeader">
+   <div id="pageLogo">
+
+         </div>
+         <div id="header">
+          <header>
+          <h1>User Registration Form</h1>
+           </header>
+            </div>
+            
+        </section>
+        <section id="sidebar">
+            <div id="sideHeader">
+                
+            </div>
+            
+        </section>
+        <section id="maincontent">
+            <section id="content">
+          <form name="registerForm" id="registerForm" action="" method="get" >
+              <fieldset>
+                  <legend>Registration Form</legend>
+                        <div>
+                            <label for="Name">Name:</label>
+                            <input type="text" id="name" name="name" autofocus placeholder="enter name" required/>
+                        </div>
+                    
+                        <div>
+                            <label for="age">Age:</label>
+                            <input type="text" id="age" name="age" placeholder="enter age" required/>
+                        </div>
+                          
+<div>
+                    <label>gender:</label> <br>
+          <input type="radio" name="gender" value="male"> Male
+           <input type="radio" name="gender" value="female">female  </br>
+                        
+</div>
+
+<div>
+                            <label>username:</label>
+                            <input type="text" id="username" name="username"  placeholder="enter username" required />                      
+</div>
+  <div>
+                            <label>Password:</label>
+                            <input type="password" id="password" name="password"  placeholder="enter password" required/>
+</div>
+                       
+
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email"  pattern="\w+\@\w+\.[a-zA-Z]{2,4}" placeholder="enter email" required/>
+                        </div>
+                        <div>
+                           
+                       <label>mobile no</label>
+<input type="mobile" placeholder="mobile no" name="user" maxlength="10" autofocus required  >
+                        </div>
+<div>
+                          <label>courses</label>
+                          <input list="courses taken" />
+                          <datalist id="courses taken">
+                              <option>BSC</option>
+                              <option>MSC</option>
+                              <option>BTECH</option>
+                          </datalist>
+                      </div>
+                      <div>
+                          <label>Country:</label>
+                          <input list="countryList" />
+                          <datalist id="countryList">
+                              <option>India</option>
+                              <option>China</option>
+                              <option>United States</option>
+                          </datalist>
+                      </div>
+                      <div>
+                            <label for="zipcode">zipcode:</label>
+                            <input type="text" id="zipcode" name="zipcode" pattern="\d{6}" placeholder="enter zipcode" required/>
+                        </div>
+                        
+
+                        <div>
+                            <input type="button"  value="Submit" onclick />
+                        </div>
+                    </fieldset>
+                </form>
+
+            </section>
+        </section>
+
+        <section id="clear"></section>
+        
+    </div>
+
+</body>
+</html>
+
+    
+
