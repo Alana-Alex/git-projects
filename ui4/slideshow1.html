@@ -1,0 +1,23 @@
+<html>
+<head>
+<body>
+<script>
+var image=document.getElementById("ima");
+var img_array=["jesus.jpg","jesus1.jpg"];
+var index=0;
+function slide()
+{
+document["ima"].src=img_array[index];
+index++;
+if (index>=img_array.length)
+{
+index=0;
+}
+}
+setInterval("slide()",500);
+</script>
+</head>
+<body>
+<img id="ima" src="heart.jpg" width="200" height="200" name="image"/>
+</body>
+</html>
