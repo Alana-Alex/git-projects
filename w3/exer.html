@@ -1,0 +1,45 @@
+/**
+    * Created by Alana on 07-04-2017.
+    */
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>main heading</title>
+        <p id="demo"> </p>
+        <p id="demo1"> </p>
+        <p id="demo2"> </p>
+        <p id="demo3">name is ivy </p>
+    </head>
+       <script>
+           function displayDate() {
+               document.getElementById("demo").innerHTML = Date();
+           }
+           var person = {name:"John", age:50 , country:"usa"};
+           document.getElementById("demo").innerHTML =
+               person.name + " is " + person.age + " years old." + "<br>" + person.country;
+           var txt="hello world";
+           document.getElementById("demo2").innerHTML=txt.length;
+           var pa="hai";
+           var pala="doe";
+           document.getElementById("demo1").innerHTML=pa+pala;
+           function myFunction() {
+               var str = document.getElementById("demo").innerHTML;
+               var txt = str.replace("ivy","alana");
+               document.getElementById("demo3").innerHTML = txt;
+          }
+       </script>
+    <body>
+
+    <p>Replace "ivy" with "alana" in page</p>
+    <button onclick="myFunction()">Try it</button>
+
+    <button onclick="this.innerHTML=Date()"> time is?? </button>
+           <P> CHECK TIME </P>
+        <button onclick="displayDate()"> my time </button>
+    <p onmouseover="this.innerHTML='hai alana'"> you??</p>
+    <p onmouseout="this.style.color='red'"> WHAT?</p>
+    <P onkeydown="this.innerHTML='HEY'"> WHEN?</P>
+
+    </body>
+</html>
